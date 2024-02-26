@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e69a;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #84e5ea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+  }
+  
+  .options {
+    margin-bottom: 15px;
+  }
+  .input-options{
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #040404;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #514f4f;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #de7ce2;
+    color: #090909;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #c229da;
+  }
+  
+  .graph {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    input[type="text"] {
+      width: calc(100% - 20px);
+    }
+  }
+  @media (max-width: 600px) {
+    .graph {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+ 

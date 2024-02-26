@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Visualization</title>
+  <link rel="stylesheet" href="dvg.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Graph Visualization</h1>
+    <div class="options">
+      <label for="dataType">Select Data Type:</label>
+      <select id="dataType">
+        <option value="numeric">Numeric Data</option>
+        <option value="categorical">Categorical Data</option>
+      </select>
+    </div>
+      
+    <div class="options">
+        <label for="xAxisLabel">X-Axis Label:</label>
+        <input type="text" id="xAxisLabel" placeholder="Enter X-axis label">
+        </div>
+        <div class="options">
+        <label for="yAxisLabel">Y-Axis Label:</label>
+        <input type="text" id="yAxisLabel" placeholder="Enter Y-axis label">
+  </div>
+  
+    <div id="inputOptions" class="input-options">
+      <div>
+        <label for="xAxisInput">X-Axis Data:</label>
+        <input type="text" id="xAxisInput" placeholder="Enter X-axis data separated by commas">
+      </div>
+      <br>
+      <div>
+        <label for="yAxisInput">Y-Axis Data:</label>
+        <input type="text" id="yAxisInput" placeholder="Enter Y-axis data separated by commas">
+      </div>
+    </div>
+    <div class="options">
+      <label for="graphType">Select Graph Type:</label>
+      <select id="graphType">
+        <option value="bar">Bar Chart</option>
+        <option value="line">Line Chart</option>
+        <option value="pie">Pie Chart</option>
+      </select>
+    </div>
+    <div class="options">
+      <button id="submitData">Submit</button>
+    </div>
+    <div class="options">
+        <button id="resetGraph">Reset</button>
+      </div>
+    <div id="graph" class="graph"></div>
+  </div>
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="dvg.js"></script>
+</body>
+
+</html>
